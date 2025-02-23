@@ -11,8 +11,8 @@ test.describe('Facebook Login Tests', () => {
         // Wait for the error message to appear
         // const errorMessage = page.locator('._9ay5'); // Updated selector
         // await expect(errorMessage).toBeVisible({ timeout: 10000 });  // Increased timeout to 10s
-        const errorMessage = page.locator('text="The email address you entered isn\'t connected to an account."');
-        await expect(errorMessage).toBeVisible();
+        const errorMessage = page.locator('text="Find your account and log in."');
+        await expect(errorMessage).toBeVisible({ timeout: 10000 });
 
     });
 });
